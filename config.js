@@ -1,14 +1,12 @@
-/* Copyright (C) 2020 Yusuf Usta.
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-WhatsAsena - Yusuf Usta
+/* Copyright (C) 2021 Ameer Kallumthodi
+re-edited by Saidalisaid
 */
 
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
-// Özel Fonksiyonlarımız
+// 脰zel Fonksiyonlar谋m谋z
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
@@ -17,18 +15,41 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v0.16.5 Public Stable',
+    VERSION: 'v1.3.2 Global Stable',
+    CHANNEL: 'https://t.me/remasterplugin',
     SESSION: process.env.ASENA_SESSION === undefined ? '' : process.env.ASENA_SESSION,
+    ANT陌L陌NK: process.env.ANT陌_L陌NK === undefined ? 'false' : process.env.ANT陌_L陌NK,
+    AUTOB陌O: process.env.AUTO_B陌O === undefined ? 'false' : process.env.AUTO_B陌O,
+    AFN: process.env.ALL_CAPTION === undefined ? 'Made By Pikachu' : process.env.ALL_CAPTION,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
+    AUTOSTICKER: process.env.AUTO_STICKER === undefined ? 'true' : process.env.AUTO_STICKER,
+    PLK: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
+    FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
+    BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'online' : process.env.BOT_PRESENCE,
+    BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
+    ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
+    GIF_WEL: process.env.GIF_WEL === undefined ? 'https://c.tenor.com/QNtFLycfQiAAAAPo/pika-pikachu.mp4' : process.env.GIF_WEL,
+    GIF_BYE: process.env.GIF_BYE === undefined ? 'https://c.tenor.com/CIDOwXeJO4gAAAPo/pokemon-wave.mp4' : process.env.GIF_BYE,
+    BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
+    DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
+    NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
+    SAID: process.env.BGM_DURATION === undefined ? '31996800' : process.env.BGM_DURATION,
+    FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
+    BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
+    UNBLOCKMSG: process.env.UNBLOCK_MESSAGE === undefined ? 'default' : process.env.UNBLOCK_MESSAGE,
     UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
     WORKTYPE: process.env.WORK_TYPE === undefined ? 'private' : process.env.WORK_TYPE,
     PROMOTEMSG: process.env.PROMOTE_MESSAGE === undefined ? 'default' : process.env.PROMOTE_MESSAGE,
     DEMOTEMSG: process.env.DEMOTE_MESSAGE === undefined ? 'default' : process.env.DEMOTE_MESSAGE,
     BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
+    BOTSK: process.env.BOT_NAME === undefined ? '饾悘饾悎饾悐饾悁饾悅饾悋饾悢 饾悂饾悗饾悡' : process.env.BOT_NAME,
+    LOGOSK: process.env.ALL_IMG === undefined ? 'https://i.pinimg.com/originals/0e/c8/8c/0ec88ca1469125fc11b4ce76830602f4.jpg' : process.env.ALL_IMG,
+    SLINK: process.env.SOCIAL_MEDIA === undefined ? 'https://www.instagram.com/ameer_.su_hail/' : process.env.SOCIAL_MEDIA,
+    TAGPLK: process.env.TAG_HEADER === undefined ? '*Attention please 馃摙*' : process.env.TAG_HEADER,
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
@@ -42,8 +63,11 @@ module.exports = {
     DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
     RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
     NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
-    SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
+    SUDO: process.env.SUDO === undefined ? '919946432377,0' : process.env.SUDO,
     DEBUG: DEBUG,
     COFFEEHOUSE_API_KEY: process.env.COFFEEHOUSE_API_KEY === undefined ? false : process.env.COFFEEHOUSE_API_KEY,
-    WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG"
+    WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
+    SUPPORT: "919946432377-1627138839",
+    SUPPORT2: "919074309534-1632403322",
+    SUPPORT3: "905511384572-1621015274"
 };
