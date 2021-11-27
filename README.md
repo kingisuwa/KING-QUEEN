@@ -3,10 +3,10 @@
 
 <div align="center">
   <img src="/alien.jpeg.jpg" width="200" height="200">
-  <h1>🐺WhatsAsena🐺 <br>>>>PUBLIC<<<</h1>
+  <h1>🐺ᴋɪɴɢ ɪꜱᴜᴡᴀ🐺 <br>>>>PUBLIC<<<</h1>
 </div>
 <p align="center">
-    WhatsAsena project - re-edited by TOXIC 4L!3N to make it public
+    ᴋɪɴɢ ɪꜱᴜᴡᴀ project - re-edited by TOXIC 4L!3N to make it public
     <br>
         Reserved |
         Reserved |
@@ -21,17 +21,17 @@
 
 > [New whatsapp group.](https://chat.whatsapp.com/HoO71q8ZuGTDZ0gHubLzJF) (New)
 
-## 🔎 What is WhatsAsena?
-**WhatsAsena,** is a WhatsApp helper bot written by [Yusuf Usta](https://github.com/Quiec) and edited by [Phaticusthiccy](https://github.com/phaticusthiccy) & [TOXIC 4L!3N](https://github.com/AI-VIKI) (Albin Thoams). Does not log into your account It is written on WhatsApp Web API.
+## 🔎 What is ᴋɪɴɢ ɪꜱᴜᴡᴀ?
+**ᴋɪɴɢ ɪꜱᴜᴡᴀ,** is a WhatsApp helper bot written by [kingisuwa](https://github.com/Quiec) and edited by [kingisuwa](https://github.com/kingisuwa) & [TOXIC 4L!3N](https://github.com/kingisuwa) (Albin Thoams). Does not log into your account It is written on WhatsApp Web API.
 
 ## Setup
 ### Very Simple Method
 `There is no support. Maybe I will try to handle it  >TOXIC 4L!3N<`
 
 ### Simple Method
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://repl.it/@phaticusthiccy/WhatsAsena-QR)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://repl.it/@kingisuwa/ᴋɪɴɢ ɪꜱᴜᴡᴀ-QR)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AI-VIKI/WhatsAsenaDuplicated)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kingisuwa/KING-QUEEN)
 
 ### The Hard Method
 ```js
@@ -39,22 +39,22 @@ GET QR
 $ apt update
 $ apt install nodejs --fix-missing
 $ pkg install git
-$ git clone https://github.com/AI-VIKI/WhatsAsena-public
-$ cd WhatsAsena
+$ git clone https://github.com/kingisuwa/ᴋɪɴɢ ɪꜱᴜᴡᴀ-public
+$ cd ᴋɪɴɢ ɪꜱᴜᴡᴀ
 $ npm install @adiwajshing/baileys
 $ npm install chalk
 $ node qr.js
 
 SETUP
-$ git clone https://github.com/AI-VIKI/WhatsAlfa.git
-$ cd WhatsAsenaDuplicated
+$ git clone https://github.com/kingisuwa/WhatsAlfa.git
+$ cd KING-QUEEN
 $ npm i
 $ nano Config.env
 // Config.env create and edit.
 $ node bot.js
 ```
 ### ⚒️ Setup Wiki 
-[![Setup - Kurulum](https://img.icons8.com/clouds/300/000000/settings.png)](https://github.com/phaticusthiccy/WhatsAsenaDuplicated/wiki)
+[![Setup - Kurulum](https://img.icons8.com/clouds/300/000000/settings.png)](https://github.com/kingisuwa/KING-QUEEN/wiki)
 
 ## F.A.Q
 Answer a few frequently asked questions;
@@ -70,7 +70,7 @@ If you are concerned about security, you can install it on your own computer. If
 ### What does Asena mean?
 [Asena](https://tr.wikipedia.org/wiki/Asena), comes from Turkish mythology. According to Turkish mythology, Asena is a she-wolf that plays an important role.
 
-## WhatsAsena Features
+## ᴋɪɴɢ ɪꜱᴜᴡᴀ Features
 
 | All Features 📢|Available ☑️|Version 🔎|
 | ------------- | ------------ | ---------- |
@@ -115,9 +115,9 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
 
 ## Developers
 
-[![Yusuf Usta](https://github.com/yusufusta.png?size=100)](https://quiec.tech) | [![TOXIC4L!3N](https://github.com/AI-VIKI.png?size=100)](https://github.com/AI-VIKI) | [![Phaticusthiccy](https://github.com/phaticusthiccy.png?size=100)](https://github.com/phaticusthiccy) | [![Alperen Ç](https://github.com/xacnio.png?size=100)](https://github.com/xacnio) | [![Justin Thoms](https://github.com/justinthoms.png?size=100)](https://github.com/justinthoms) 
+[![kingisuwa](https://github.com/yusufusta.png?size=100)](https://quiec.tech) | [![TOXIC4L!3N](https://github.com/kingisuwa.png?size=100)](https://github.com/kingisuwa) | [![kingisuwa](https://github.com/kingisuwa.png?size=100)](https://github.com/kingisuwa) | [![Alperen Ç](https://github.com/xacnio.png?size=100)](https://github.com/xacnio) | [![Justin Thoms](https://github.com/justinthoms.png?size=100)](https://github.com/justinthoms) 
 ----|----|----|----|----
-[Yusuf Usta](https://t.me/fusufs) | [TOXIC4L!3N](https://github.com/AI-VIKI) | [Phaticusthiccy](https://github.com/phaticusthiccy) | [Alperen Ç](https://t.me/xacnio) | [justinthoms](https://t.me/Mr_justinthomas)
+[kingisuwa](https://t.me/fusufs) | [TOXIC4L!3N](https://github.com/kingisuwa) | [kingisuwa](https://github.com/kingisuwa) | [Alperen Ç](https://t.me/xacnio) | [justinthoms](https://t.me/Mr_justinthomas)
 Author, Base, Bug Fixes, Modules | Modifiying  as   public | Author, Base, Bug Fixes, Modules | Bug Fixes, Modules, Idea | Modules, Idea
 
 ## Thanks To
