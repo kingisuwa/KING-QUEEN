@@ -15,7 +15,7 @@
             "INSTALL_DESC": "Install external plugins.",
             "NEED_URL": "Please enter a URL! Example:",
             "INVALID_URL": "```Please enter a valid url!```",
-            "INVALID_PLUGIN": "*❌ Your plugin is invalid!*\n*Error:*",
+            "INVALID_PLUGIN": "*❌ Your plugin is invalid!*\n*Error:\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw*",
             "INSTALLED": "*✅ Plugin has been successfully installed!*",
             "PLUGIN_DESC": "Shows the plugins you have installed.",
             "INSTALLED_FROM_REMOTE": "*Plugins you install externally:*\n",
@@ -27,13 +27,13 @@
         },
         "admin": {
             "BAN_DESC": "Ban someone in the group. Reply to message or tag a person to use command.",
-            "IM_NOT_ADMIN": "*I am not admin in this group!*",
-            "BANNED": "kicked out of the group!",
-            "GIVE_ME_USER": "*Give me a user!*",
+            "IM_NOT_ADMIN": "*njan admin alla macha☹️*",
+            "BANNED": "Mwonu Ok Bie!",
+            "GIVE_ME_USER": "*arelum mention chey😈!*",
             "ADD_DESC": "Adds someone to the group.",
             "ADDED": "added to the group!",
-            "ALREADY_PROMOTED": "```How can I make someone admin who is already admin?```",
-            "PROMOTED": "```, admin role was given!```",
+            "ALREADY_PROMOTED": "```Avan admin anu nenpa🙃```",
+            "PROMOTED": "```admin role was given!```",
             "PROMOTE_DESC": "Makes any person an admin.",
             "DEMOTE_DESC": "Takes the authority of any admin.",
             "ALREADY_NOT_ADMIN": "```How can I make someone admin who is already admin?```",
@@ -56,8 +56,8 @@
             "REASON": "Reason",
             "LAST_SEEN": "Last Seen",
             "IM_NOT_AFK": "```I am not AFK anymore!```",
-            "AFK_TEXT": "```Bip bop! This is a bot. My owner is not here at the moment.```",
-            "AFK_TEXT_NOMD": "Bip bop! This is a bot.",
+            "AFK_TEXT": "```My owner is not here at the moment.```",
+            "AFK_TEXT_NOMD": "I am bot!",
             "HOUR": "hour",
             "MINUTE": "minute",
             "SECOND": "second"
@@ -73,9 +73,9 @@
         },
         "heroku": {
             "RESTART_DESC": "Restart WhatsAsena",
-            "RESTART_MSG": "```Restarting...```",
+            "RESTART_MSG": "```Restarting...🧚‍♂️```",
             "SHUTDOWN_DESC": "Shutdown WhatsAsena",
-            "SHUTDOWN_MSG": "```Shutting down ⛔```",
+            "SHUTDOWN_MSG": "```Shutting down 😴```",
             "DYNO_DESC": "Check heroku dyno usage",
             "DYNO_TOTAL": "```Total Quota```",
             "DYNO_USED": "```Quota used```",
@@ -130,11 +130,21 @@
             "NEED_REPLY": "*Reply to a photo!*",
             "DOWNLOADING": "```Downloading media & making meme...```"
         },
+        "log": {
+            "LOG": "Saves the message you reply to your private number.",
+            "REPLY": "*Please Reply To Any Message!*",
+            "ANIM": "Does not support animated stickers!",
+            "HEAD": "```===== [LOGGED MESSAGE] =====```\n\n",
+            "USER": " From User Number \n",
+            "FROM": " From the group with ID, ",
+            "MSG": "Message: \n\n",
+            "SUC": "*Message Successfully Saved to LOG!*"
+        },
         "ocr": {
             "OCR_DESC": "Reads the text on the photo you have replied.",
             "NEED_REPLY": "*Reply to a photo!*",
             "DOWNLOADING": "```Media is downloading & reading...```",
-            "ERROR": "```I couldn't read this :/```\n*Error:*```{}```",
+            "ERROR": "```I couldn't read this :/```\n*Error:*```{}```\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw```",
             "RESULT": "*Language:* ```{}```\n*Here is what I read:* ```{}```"
         },
         "profile": {
@@ -156,9 +166,9 @@
         },
         "removebg": {
             "REMOVEBG_DESC": "Removes the background of the photos.",
-            "NEED_PHOTO": "*Give me a photo!*",
-            "NO_API_KEY": "*You don't have an API key!*\nYou can get it here: remove.bg.",
-            "RBGING": "```Removing background...```"
+            "NEED_PHOTO": "*photo thaa mister!*",
+            "NO_API_KEY": "*Api key illa aliyaa*\n```remove.bg login for apikey```",
+            "RBGING": "```Removing...```"
         },
         "scrapers": {
             "TRANSLATE_DESC": "It translates with Google Translate. You must reply any message.",
@@ -167,34 +177,34 @@
             "LANG": "Language",
             "FROM": "Translated Language",
             "RESULT": "Translate",
-            "TRANSLATE_ERROR": "❌ An error occured while translating!*",
+            "TRANSLATE_ERROR": "❌ An error occured while translating!*\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw*",
             "CURRENCY_ERROR": "```Syntax error! Example: .currency 1 TRY USD```",
             "INVALID_CURRENCY": "```Foreign currency transaction failed. You wrote wrong currency!```",
             "UNKNOWN_ERROR": "```An error occurred. Foreign currency transaction failed!```",
             "TTS_DESC": "It converts text to sound.",
             "TTS_ERROR": "```Error, Speech example of your sentence couldn't be made!```",
             "SONG_DESC": "Uploads the song you wrote.",
-            "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song eminem - rap god```",
+            "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song Naadan Vibe```",
             "NO_RESULT": "*I couldn't find anything :(*",
-            "DOWNLOADING_SONG": "```Downloading your song...```",
-            "UPLOADING_SONG": "```Uploading your song...```",
+            "DOWNLOADING_SONG": "\n*Song Thapatte 🧚‍♂️*\n",
+            "UPLOADING_SONG": "\n*Uploading 📲 Use 🎧*\n",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
-            "DOWNLOADING_VIDEO": "```Downloading your video...```",
-            "UPLOADING_VIDEO": "```Uploading your video...```",
+            "DOWNLOADING_VIDEO": "```Downloading 🎥...```",
+            "UPLOADING_VIDEO": "```Uploading...```",
             "YT_DESC": "It searchs on YouTube.",
             "NEED_WORDS": "```Please write a few words!```",
             "GETTING_VIDEOS": "```I'm bringing videos...```",
-            "NOT_FOUND": "*I couldn't find anything :(*",
-            "SEARCHING": "* 🔎 Searching...*",
+            "NOT_FOUND": "*Thappinokeett kittiyilla ☹️*",
+            "SEARCHING": "*🔎 Searching...*",
             "WIKI_DESC": "Searches query on Wikipedia.",
             "IMG_DESC": "Searches for related pics on Google.",
-            "IMG": "Uploading photo ```{}``` number ```{} ```..."
+            "IMG": "```Uploading photo``` *{}* ```number``` *{}*"
         },
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
             "NEED_REPLY": "*Reply to a photo or video!*",
-            "DOWNLOADING": "```Media downloading & converting to sticker...```"
+            "DOWNLOADING": "```Ippam Seriyakithra 🤠```"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
@@ -207,24 +217,91 @@
         "updater": {
             "UPDATER_DESC": "Checks the update.",
             "UPDATE": "*Your bot is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for Bot!*\n\nChanges:\n```",
+            "NEW_UPDATE": "*Pikachu Update Available*\n\n please ask support group before updating. Otherwise chance to get error\n Max Error oyvakkan Subscribe cheyyu https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw \n https://chat.whatsapp.com/FsDjV2uRKce4wgMpAtYwyf \n\nChanges:\n```",
             "UPDATE_NOW_DESC": "It makes updates.",
-            "UPDATING": "_Updating..._",
+            "UPDATING": "```Updating..🧚‍♂️```",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
-            "UPDATED": "*✅ Successfully Updated!*",
+            "UPDATED": "*Updated 🤠✅*",
             "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "*💬 WhatsAsena Restating Automaticly!*"
+            "AFTER_UPDATE": "*😎 Pikachu Restarting*"
         },
         "weather": {
             "WEATHER_DESC": "Shows the weather.",
-            "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather Bakü```",
+            "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather New Delhi```",
             "LOCATION": "Location",
+            "LAT": "Lattitude",
+            "LONG": "Longitude",
             "TEMP": "Temperature",
             "DESC": "Description",
+            "FEEL": "Feels Like",
             "HUMI": "Humidity",
             "WIND": "Wind Speed",
             "CLOUD": "Cloud",
-            "NOT_FOUND": "```I couldn't find a city with this name. 😖```"
+            "NOT_FOUND": "```I couldn't find a city with this name. 😖```",
+            "QUOTE_DESC": "Gives a random quote.",
+            "NEED_LOCATIONA": "*Invalid Request*",
+            "QUOTE": "Quote:",
+            "AUTHOR": "Author:",
+            "NOT_FOUNDA": "```Sorry,I could not find a quote. 😖```",
+            "NAMEY": "Name:",
+            "PUBLISHER": "Publisher",
+            "MODINFO": "ModInfo",
+            "DOWNLOAD": "Download",
+            "SIZE": "Size:",
+            "MODD_DESC": "Get modded app details from MODDROID.",
+            "HMODD_DESC": "Get modded app details from HappyMod.",
+            "NEED_APPNAME": "*Invalid Request,Provide an app name*",
+            "NOT_FOUNDMD": "```Sorry,I could not find such an app.\n Try using .happymod if .modd is not working 😖```",
+            "CM_DESC": "Get a compliment.",
+            "NOT_FOUNDAC": "*Invalid Request*",
+            "CM": "Hey,",
+            "BOT_DESC": "Chat with an AI Bot.\n Use .bot <message>",
+            "BOT": ":",
+            "JOKE_DESC": "Get a random joke.",
+            "JOKE": "Joke:",
+            "PUNCHLINE": "Punchline:",
+            "EVINS_DESC": "Get an evil insult.",
+            "EVINS": "...",
+            "ZODIAC_DESC": "Get the days horosope for your sunsign.",
+            "NEED_ZOD": "*Invalid Request,Provide your sunsign*",
+            "SUNSIGN": "Sun Sign",
+            "HOROSCOPE": "Horoscope",
+            "NEWS_DESC": "Get the days news, add a category after .news .",
+            "NEED_CATEGORY": "*Please write a category!*\n*Example:* ```.news technology```",
+            "CATEGORY": "Category",
+            "RMLINK": "Read More",
+            "NEWS": "News Content",
+            "NEWST": "News Title",
+             "NOT_FOUND": "```oops...I couldn't find a category with this name. 😖```",
+            "SONG": "Song",
+            "ALBUM": "Album",
+            "TITLE": "Title",
+            "PUBLICATION": "Publication",
+            "SONGL": "Link",
+            "NEED_SONG": "Song name para nenba 🥲.",
+            "NOT_FOUNDS" : "No such songs found!",
+            "JOOX_DESC": "Brings you the song details and a link for it.",
+            "LYRICS_DESC": "Brings you the song Lyrics.",
+            "SONGLI": "Lyrics",
+            "TIN_DESC": "Shortens the given link using tinyurl.",
+            "BIT_DESC": "Shortens the given link using bitly.",
+            "NOT_FOUNDLI": "Lyrics not found",
+            "SLINK": "Link",
+            "NEED_LINK":"Please provide the link",
+            "IGTVDESC":"Download videos from IGTV link",
+            "NEED_WORDIGTV":"Please provide the IGTV link",
+            "LOADINGTV":"Loading...",
+             "NOT_FOUNDIG":"Insta video not found",
+             "USERNAME":"Username",
+            "CAPTION":"Caption",
+             "VID":"Video",
+             "NEED_WORDIG":"Download videos from IG link",
+            "IGDESC":"Download videos from IG link \n For Reels change the 'reels' in the link to 'p'.",
+            "FBDESC":"Download videos from fb link",
+            "NEED_WORDFB":"Download videos from fb link",
+            "NOT_FOUNDFB":"Fb video not found"
+            
+            
         },
         "web": {
             "SPEEDTEST_DESC": "Measures Download and Upload speed.",
@@ -240,8 +317,8 @@
             "MP4TOAUDİO_NEEDREPLY": "*You Must Reply to a Video!*",
             "MP4TOAUDİO": "```Converting Video to Audio..```",
             "STİCKER_DESC": "Converts the sticker to a photo.",
-            "STİCKER_NEEDREPLY": "*You Must Reply to a sticker!*",
-            "STİCKER": "```Converting the sticker to a photo..```",
+            "STİCKER_NEEDREPLY": "*Photokk Reply ayitt ayakk*",
+            "STİCKER": "```Converting...```",
             "XMEDİA_DESC": "It is a plugin with more than 25 media tools.",
             "T_FALSE": "```❌ Incorrect Blend Effect Entered!```\n```🔎 Existing Commands:```\n\n*$dodge* - Applies a pink color filter to the video.\n*$multiply* - Applies a green color filter to the video.\n*$grainmerge* - Increases the contrast of the video.\n*$and* - Applies black lightning effect according to the speed of the video.\n*$or* - Applies a white lightning effect according to the speed of the video.\n*$burn* - Applies green contrast to video.\n*$difference* - Shows the differences by applying green relief to the video.\n*$grainextract* - Shows the differences by applying gray relief to the video.\n*$divide* - Demonstrates the differences by applying a pink relief to the video.\n*$xor* - Applies both green relief and lightning effect to video.\n*$hardmix* - Mixes the colors of the video into a yellow and red tone.\n*$negation* - Turns the dynamics of the video to pink.",
             "T_NOT": "```💭 You Need To Enter Any Blend Effects!\n```🔎 Existing Commands:```\n\n*$dodge* - Applies a pink color filter to the video.\n*$multiply* - Applies a green color filter to the video.\n*$grainmerge* - Increases the contrast of the video.\n*$and* - Applies black lightning effect according to the speed of the video.\n*$or* - Applies a white lightning effect according to the speed of the video.\n*$burn* - Applies green contrast to video.\n*$difference* - Shows the differences by applying green relief to the video.\n*$grainextract* - Shows the differences by applying gray relief to the video.\n*$divide* - Demonstrates the differences by applying a pink relief to the video.\n*$xor* - Applies both green relief and lightning effect to video.\n*$hardmix* - Mixes the colors of the video into a yellow and red tone.\n*$negation* - Turns the dynamics of the video to pink.",
@@ -334,7 +411,7 @@
         },
         "unvoice": {
             "UV_DESC": "Converts audio to sound recording.",
-            "UV_REPLY": "*You Must Reply to the Audio File!*",
+            "UV_REPLY": "*You Must Reply to an Audio File!*",
             "UV_PROC": "```Converting to Sound Recording..```"
         },
         "ffmpeg": {
@@ -369,6 +446,9 @@
             "ANIME_DESC": "It writes the text inside the banner the anime girl is holding",
             "TRUMP_DESC": "Converts the text to Trump's tweet.",
             "CHANGE_DESC": "Turns the text into the change my mind poster."
+       },
+       "anime": { 
+            "AN": "It sends an Anime Randomly."
         },
         "wallpaper": {
             "WP": "It sends high resolution wallpapers."
@@ -408,6 +488,54 @@
             "PUBLIC": "Public",
             "HIDDEN": "Hidden",
             "NOT_FOUND":"User not found: "
+        },
+        "qrgenerator": {
+             "TEXT": "You must enter text!",
+            "QR_DESC": "Converts the given text into a qr code image."
+            
+        },
+        "whois": {
+            "PL_DESC": "Displays metadata data of group or person.",
+            "SUB": "*Group Name:* ",
+            "DES": "*Group Description:* ",
+            "OWN": "*Founder:* ",
+            "COD": "*Unique Group Code:* ",
+            "JİD": "*Person JID:* ",
+            "ST": "*Person Status:* "
+        },
+        "covid": {
+            "COV_DESC": "Shows the daily and overall covid table of more than 15 countries.",
+            "NOT": "```Sorry I Could Not Find A Country Like This! Please Enter Applicable Country Codes!```\n\n```Country Codes:``` *.covid tr || az || usa || in || cn || nl || pk || ru || de || uk || gr || fr || jp || kz || id*"
+        },
+        "lyrics": {
+            "LY_DESC": "Finds the lyrics of the song.",
+            "NEED": "```You Must Write Any Song!```",
+            "SLY": "Lyrics:",
+            "AUT": "Song Owner:",
+            "BUL": "Founded Song:",
+            "ARAT": "Searched Song:"
+        },
+        "github": {
+            "GİTHUB_DESC": "Collects github information from the given username.\n⌨️ Example: .github phaticusthiccy",
+            "REPLY": "```You Need To Type Any Username!```",
+            "NOT": "```User not found!```",
+            "FOLLOWERS": "Followers:",
+            "NAME": "Name:",
+            "USERNAME": "Username:",
+            "REPO": "Public Repos:",
+            "BİO": "Biography:",
+            "FOLLOWİNG": "Following:",
+            "COMPANY": "Company:",
+            "BLOG": "Blog:",
+            "MAİL": "Mail Address:",
+            "LOCATİON": "Location:",
+            "GİST": "Public Gists:",
+            "JOİN": "Joining Date:",
+            "HİRE_FALSE": "Cannot Hirable 🚫",
+            "HİRE_TRUE": "Hirable ☑️",
+            "HİRE": "Can s/he Hirable?:",
+            "URL": "Profile URL:",
+            "UPDATE": "Last Update:"
         }
     }
 }
