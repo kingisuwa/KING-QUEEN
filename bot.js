@@ -3,7 +3,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+кιηg qυєєη - Yusuf Usta
 */
 
 const fs = require("fs");
@@ -83,7 +83,7 @@ async function whatsAsena () {
 
     conn.on ('credentials-updated', async () => {
         console.log(
-            chalk.blueBright.italic('✅ Login Information Updated!')
+            chalk.blueBright.italic('✅ ඉන්න මද වෙලවක් සම්බන්ද වෙමින්')
         );
 
         const authInfo = conn.base64EncodedAuthInfo();
@@ -98,17 +98,17 @@ async function whatsAsena () {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
-${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
+${chalk.blue.italic('ℹ️ Connecting to WhatsApp... 😋 පොඩ්ඩයි .')}`);
     });
     
 
     conn.on('open', async () => {
         console.log(
-            chalk.green.bold('✅ Login successful!')
+            chalk.green.bold('✅ සම්බන්ද වෙමින් K͓̽I͓̽N͓̽G͓̽ Q͓̽U͓̽E͓̽E͓̽N͓̽')
         );
 
         console.log(
-            chalk.blueBright.italic('⬇️ Installing External Plugins...')
+            chalk.blueBright.italic('⬇️ Installing සොයමින් සිටි Plugins...')
         );
 
         var plugins = await plugindb.PluginDB.findAll();
@@ -124,7 +124,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
         });
 
         console.log(
-            chalk.blueBright.italic('⬇️  Installing Plugins...')
+            chalk.blueBright.italic('⬇️  සාර්ටකයි ඔබෙ බෝට්...')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
@@ -134,24 +134,24 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
         });
 
         console.log(
-            chalk.green.bold('✅ Plugins Installed!')
+            chalk.green.bold('✅ දැන් ඔබට බවිතා කර ගැකිය⛧☸✹')
         );
         await new Promise(r => setTimeout(r, 1100));
 
         if (config.WORKTYPE == 'public') {
             if (config.LANG == 'TR' || config.LANG == 'AZ') {
-                await conn.sendMessage(conn.user.jid, '*WhatsAsena Public Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için config vars üzerinden “WORK_TYPE” anahtarını “private” yapın.*\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+                await conn.sendMessage(conn.user.jid, '*кιηg qυєєη ප්‍රසිද්ධියේ ක්‍රියා කරයි! 🐺 * \n\n_කරුණාකර මෙහි ප්ලගිනය කිරීමට උත්සාහ නොකරන්න. මෙය ඔබගේ LOG අංකයයි ._\n_ඔබට ඕනෑම සංවාදයකදී ගමනාගමන උත්සාහ කළ හැක :) සංසන්දනය කිරීම සඳහා කරුණාකර config vars හි "WORK_TYPE" යතුර වසා දමන්න. * \n\n * кιηg qυєєη භාවිතා කිරීම ගැන ස්තූතියි 💌*', MessageType.text);
             }
             else {
-                await conn.sendMessage(conn.user.jid, '*WhatsAsena Working as Public! 🐺*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as public. To change it, make the “WORK_TYPE” switch “private” in config vars.*\n\n*Thanks for using WhatsAsena 💌*', MessageType.text);
+                await conn.sendMessage(conn.user.jid, '*кιηg qυєєη මහජනයා ලෙස වැඩ කිරීම! ☸✹☸☮*\n\n_කරුණාකර මෙහි ප්ලගීන උත්සාහ නොකරන්න. මෙය ඔබගේ LOG අංකයයි._\n_ඔබට ඕනෑම කතාබහකට විධාන උත්සාහ කළ හැක :)_\n\n*ඔබේ බොට් පොදු ලෙස ක්‍රියා කරයි. එය වෙනස් කිරීමට, config vars තුළ “WORK_TYPE” ස්විචය “පුද්ගලික” කරන්න.*\n\n*кιηg qυєєη භාවිතා කිරීම ගැන ස්තුතියි 💠❀*', MessageType.text);
             }
         }
         else if (config.WORKTYPE == 'private') {
             if (config.LANG == 'TR' || config.LANG == 'AZ') {
-                await conn.sendMessage(conn.user.jid, '*WhatsAsena Private Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için config vars üzerinden “WORK_TYPE” anahtarını “public” yapın.*\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+                await conn.sendMessage(conn.user.jid, '*кιηg qυєєη Private Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için config vars üzerinden “WORK_TYPE” anahtarını “public” yapın.*\n\n*кιηg qυєєη Kullandığın İçin Teşekkürler 💌*', MessageType.text);
             }
             else {
-                await conn.sendMessage(conn.user.jid, '*WhatsAsena Working as Private! 🐺*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as private. To change it, make the “WORK_TYPE” switch “public” in config vars.*\n\n*Thanks for using WhatsAsena 💌*', MessageType.text);
+                await conn.sendMessage(conn.user.jid, '*кιηg qυєєη පුද්ගලිකව වැඩ! 😋☸⛧💠☸:*\n\n_කරුණාකර මෙහි ප්ලගීන උත්සාහ නොකරන්න. මෙය ඔබගේ LOG අංකයයි._\n_ඔබට ඕනෑම කතාබහකට විධාන උත්සාහ කළ හැක :)_\n\n*ඔබේ බොට් පුද්ගලික ලෙස ක්‍රියා කරයි. එය වෙනස් කිරීමට, config vars හි “WORK_TYPE” ස්විචය “පොදු” කරන්න.*\n\n*кιηg qυєєη භාවිතා කිරීම ගැන ස්තුතියි 💠❀*', MessageType.text);
             }
         }
         else {
@@ -243,7 +243,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                         } catch (error) {
                             if (config.LANG == 'TR' || config.LANG == 'AZ') {
                                 await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [WHATSASENA] --*' + 
-                                    '\n*WhatsAsena bir hata gerçekleşti!*'+
+                                    '\n*кιηg qυєєη bir hata gerçekleşti!*'+
                                     '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
                                     '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
                                     '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._' +
@@ -252,7 +252,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                                     , MessageType.text, {detectLinks: false});
                             } else {
                                 await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [WHATSASENA] --*' + 
-                                    '\n*WhatsAsena an error has occurred!*'+
+                                    '\n*кιηg qυєєη an error has occurred!*'+
                                     '\n_This error log may include your number or the number of an opponent. Please be careful with it!_' +
                                     '\n_You can write to our Telegram group for help._' +
                                     '\n_This message should have gone to your number (saved messages)._\n\n' +
