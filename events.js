@@ -1,28 +1,30 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Codded by @kingisuwa
+
+Telegram: t.me/kingisuwa
+Facebook: https://www.facebook.com/ravindu.manoj.79
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
-*/
+Whats bot - kingisuwa
 
-// Komutları burada tutacağız.
+*/
 var config = require('./config');
 var Commands = [];
 
-function addCommand(info, func) {
-    // Basit bir fonksiyon, komut eklemek için.
+function newcmdaddtoking(info, func) {
+   
     var types = ['photo', 'image', 'text', 'message'];
 
     var infos = {
         fromMe: info['fromMe'] === undefined ? true : info['fromMe'], // Or Sudo
-        onlyGroup: info['onlyGroup'] === undefined ? false : info['onlyGroup'],
+        onlyGrpKing: info['onlyGrpKing'] === undefined ? false : info['onlyGrpKing'],
         onlyPinned: info['onlyPinned'] === undefined ? false : info['onlyPinned'],
         onlyPm: info['onlyPm'] === undefined ? false : info['onlyPm'],
-        deleteCommand: info['deleteCommand'] === undefined ? true : info['deleteCommand'],
+        delownkingcmd: info['delownkingcmd'] === undefined ? true : info['delownkingcmd'],
         desc: info['desc'] === undefined ? '' : info['desc'],
         usage: info['usage'] === undefined ? '' : info['usage'],
-        dontAddCommandList: info['dontAddCommandList'] === undefined ? false : info['dontAddCommandList'],
+        dontAdCommandList: info['dontAdCommandList'] === undefined ? false : info['dontAdCommandList'],
         warn: info['warn'] === undefined ? '' : info['warn'],
         function: func
     };
@@ -45,6 +47,6 @@ function addCommand(info, func) {
 }
 
 module.exports = {
-    addCommand: addCommand,
+    newcmdaddtoking: newcmdaddtoking,
     commands: Commands
 }
