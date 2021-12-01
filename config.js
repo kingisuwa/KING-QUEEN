@@ -1,44 +1,81 @@
-/* Copyright (C) 2021 Ameer Kallumthodi
-re-edited by Saidalisaid
+/* Codded by @isuwabrooo
+
+Telegram: t.me/isuwabrooo
+Facebook: https://www.facebook.com/isuwabrooo.79
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+Whats bot - isuwabrooo
 */
 
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
-// 脰zel Fonksiyonlar谋m谋z
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 
-DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : process.env.DATABASE_URL;
+DATABASE_URL = process.env.DATABASE_URL === undefined ? './kingqueen.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v1.3.2 Global Stable',
-    CHANNEL: 'https://t.me/remasterplugin',
-    SESSION: process.env.ASENA_SESSION === undefined ? '' : process.env.ASENA_SESSION,
-    ANT陌L陌NK: process.env.ANT陌_L陌NK === undefined ? 'false' : process.env.ANT陌_L陌NK,
-    AUTOB陌O: process.env.AUTO_B陌O === undefined ? 'false' : process.env.AUTO_B陌O,
-    AFN: process.env.ALL_CAPTION === undefined ? 'Made By Pikachu' : process.env.ALL_CAPTION,
+    VERSION: 'King-queen 2.0.0 - Full Control',
+    CHANNEL: 'https://t.me/KINGQUEEN',
+    SESSION: process.env._KING_QUEEN_SESSION === undefined ? '' : process.env._KING_QUEEN_SESSION,
+    ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
+    INBO: process.env.INBO_BLOCK === undefined ? 'false' : process.env.INBO_BLOCK,
+    Bad_Word: process.env.BAD_KICK === undefined ? 'false' : process.env.BAD_KICK,
+    PSW: process.env.BOT_MODE === undefined ? 'kingqueen' : process.env.BOT_MODE,
+    PSD: process.env.PASS_WORD_SES === undefined ? 'king' : process.env.PASS_WORD_SES,
+    PROXY: process.env.PROXY === undefined ? 'false' : process.env.PROXY,
+    AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
+    DEEPAI: process.env.DEEP_AI === undefined ? '09010100-625c-46c4-b226-8f9a5e6e548f' : process.env.DEEP_AI,
+    ABT: process.env.AUTO_BİO_ABOUT === undefined ? 'Coded By isuwabrooo' : process.env.AUTO_BİO_ABOUT,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
-    LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
-    ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
+    LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
+    TEXT: process.env.TEXTTEXTTEXT === undefined ? 'KINGS' : process.env.TEXTTEXTTEXT.toUpperCase(),
+    ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'Coded By isuwabrooo \n\n Join The Telegrame Group \nt.me/KINGQUEEN\n\n' : process.env.ALIVE_MESSAGE,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
-    AUTOSTICKER: process.env.AUTO_STICKER === undefined ? 'true' : process.env.AUTO_STICKER,
-    PLK: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
-    FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
-    BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'online' : process.env.BOT_PRESENCE,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
-    GIF_WEL: process.env.GIF_WEL === undefined ? 'https://c.tenor.com/QNtFLycfQiAAAAPo/pika-pikachu.mp4' : process.env.GIF_WEL,
-    GIF_BYE: process.env.GIF_BYE === undefined ? 'https://c.tenor.com/CIDOwXeJO4gAAAPo/pokemon-wave.mp4' : process.env.GIF_BYE,
-    BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
+    VOICEFILTER: process.env.VOICE_REPLY === undefined ? false : convertToBool(process.env.VOICE_REPLY),
+    CPK: process.env.CAPTION_NAME === undefined ? 'Coded By t.me/isuwabrooo' : process.env.CAPTION_NAME,
+    MCMD: process.env.MAIN_COMMAND === undefined ? 'KING' : process.env.MAIN_COMMAND,
+    ALIMG: process.env.SYSTEM_IMAGE === undefined ? 'https://i.ibb.co/RzSZW8F/IMG-20210810-WA0005.jpg' : process.env.SYSTEM_IMAGE,
+    KINGP: process.env.X_TEAM_API_A === undefined ? 'd9f297dbf7b0bbf4' : process.env.X_TEAM_API_A,
+    KINGO: process.env.X_TEAM_API_B === undefined ? 'c809c9b2f07400c2' : process.env.X_TEAM_API_B,
+    KINGN: process.env.X_TEAM_API_C === undefined ? '6ffb0caa0165c0e6' : process.env.X_TEAM_API_C,
+    KINGM: process.env.X_TEAM_API_D === undefined ? '7d9712378e88936a' : process.env.X_TEAM_API_D,
+    KINGL: process.env.X_TEAM_API_E === undefined ? '247853f9489fd9dd' : process.env.X_TEAM_API_E,
+    KINGK: process.env.X_TEAM_API_F === undefined ? '47bd16bd0d1f5dd9' : process.env.X_TEAM_API_F,
+    KINGJ: process.env.X_TEAM_API_G === undefined ? 'f5fac49952b0f9fd' : process.env.X_TEAM_API_G,
+    KINGI: process.env.X_TEAM_API_H === undefined ? 'e28ddd615308dc15' : process.env.X_TEAM_API_H,
+    KINGH: process.env.X_TEAM_API_I === undefined ? '6e8843a1b96c1b55' : process.env.X_TEAM_API_I,
+    KINGG: process.env.X_TEAM_API_J === undefined ? '0ee332ecf9252b8e' : process.env.X_TEAM_API_J,
+    KINGF: process.env.X_TEAM_API_K === undefined ? '929b8d6bc1dbba2d' : process.env.X_TEAM_API_K,
+    KINGE: process.env.X_TEAM_API_L === undefined ? '608c95b6e98badf2' : process.env.X_TEAM_API_L,
+    KINGD: process.env.X_TEAM_API_M === undefined ? 'fe1a79b7f94e0895' : process.env.X_TEAM_API_M,
+    KINGC: process.env.X_TEAM_API_N === undefined ? 'fff22c3b31155a13' : process.env.X_TEAM_API_N,
+    KINGB: process.env.X_TEAM_API_O === undefined ? '3996a91c7fca6ee7' : process.env.X_TEAM_API_O,
+    KINGA: process.env.X_TEAM_API_P === undefined ? '53859a9d6bbb75cd' : process.env.X_TEAM_API_P,
+    KINGQ: process.env.X_TEAM_API_Q === undefined ? 'b73460ebf0b78fba' : process.env.X_TEAM_API_Q,
+    RGMSE: process.env.ZENZ_API_E === undefined ? 'b530f1a72e' : process.env.ZENZ_API_E,
+    RGMSD: process.env.ZENZ_API_D === undefined ? '4c39c1d430c0' : process.env.ZENZ_API_D,
+    RGMSC: process.env.ZENZ_API_C === undefined ? '283ad91cbc' : process.env.ZENZ_API_C,
+    RGMSB: process.env.ZENZ_API_B === undefined ? '1606ea72e2' : process.env.ZENZ_API_B,
+    RGMSA: process.env.ZENZ_API_A === undefined ? 'aca83a4354ac' : process.env.ZENZ_API_A,
+    GIFORPP: process.env.Y__GREETING_TYPE === undefined ? 'pp' : process.env.Y__GREETING_TYPE,
+    WLP: process.env.Y_WELLCOME === undefined ? 'https://i.ibb.co/TwDZC28/Welcome-poster-with-spectrum-brush-strokes-on-white-background-Colorful-gradient-brush-design-Vector.jpg' : process.env.Y_WELLCOME,
+    GDB: process.env.Y_GOODBYE === undefined ? 'https://i.ibb.co/Scj56Wd/Good-Bye-neon-text-vector-design-template-Good-Bye-neon-logo-light-banner-design-element-colorful-mo.jpg' : process.env.Y_GOODBYE,
+    KINGRR: process.env.ZZ_PASSWORD === undefined ? '' : process.env.ZZ_PASSWORD,
     DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
     NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
-    SAID: process.env.BGM_DURATION === undefined ? '31996800' : process.env.BGM_DURATION,
-    FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
+    OWNERSHIP: process.env.OWNER_SHIP === undefined ? 'KING QUEEN' : process.env.OWNER_SHIP,
+    BOTNAME: process.env.YOUR_BOT_NAME === undefined ? '❄💘King💓❄bot(💗සූටික්කි💗)R💌S' : process.env.YOUR_BOT_NAME,
+    FULLKING: process.env.FULL_KING === undefined ? 'false' : process.env.FULL_KING,
     BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
     UNBLOCKMSG: process.env.UNBLOCK_MESSAGE === undefined ? 'default' : process.env.UNBLOCK_MESSAGE,
     UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
@@ -46,10 +83,8 @@ module.exports = {
     PROMOTEMSG: process.env.PROMOTE_MESSAGE === undefined ? 'default' : process.env.PROMOTE_MESSAGE,
     DEMOTEMSG: process.env.DEMOTE_MESSAGE === undefined ? 'default' : process.env.DEMOTE_MESSAGE,
     BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
-    BOTSK: process.env.BOT_NAME === undefined ? '饾悘饾悎饾悐饾悁饾悅饾悋饾悢 饾悂饾悗饾悡' : process.env.BOT_NAME,
-    LOGOSK: process.env.ALL_IMG === undefined ? 'https://i.pinimg.com/originals/0e/c8/8c/0ec88ca1469125fc11b4ce76830602f4.jpg' : process.env.ALL_IMG,
-    SLINK: process.env.SOCIAL_MEDIA === undefined ? 'https://www.instagram.com/ameer_.su_hail/' : process.env.SOCIAL_MEDIA,
-    TAGPLK: process.env.TAG_HEADER === undefined ? '*Attention please 馃摙*' : process.env.TAG_HEADER,
+    AUTOSTICKER: process.env.AUTO_STICKER === undefined ? false : convertToBool(process.env.AUTO_STICKER),
+    DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
@@ -60,14 +95,23 @@ module.exports = {
         APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME
     },
     DATABASE_URL: DATABASE_URL,
-    DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
+    DATABASE: DATABASE_URL === './kingqueen.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
     RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
     NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
-    SUDO: process.env.SUDO === undefined ? '919946432377,0' : process.env.SUDO,
+    SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
     DEBUG: DEBUG,
     COFFEEHOUSE_API_KEY: process.env.COFFEEHOUSE_API_KEY === undefined ? false : process.env.COFFEEHOUSE_API_KEY,
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
-    SUPPORT: "919946432377-1627138839",
-    SUPPORT2: "919074309534-1632403322",
-    SUPPORT3: "905511384572-1621015274"
+    RRRRA: "393475528094-1415817281",
+    RRRRB: "96176912958-1458298055",
+    RRRRC: "393472769604-1446476993",
+    RRAKING: "94785435462-1621751150",
+    RRBKING: "94785435462-1625490851",
+    RRCKING: "94785435462-1618586156",
+    RRDKING: "94776785357-1626432386",
+    RREKING: "94776785357-1626521320",
+    RRFKING: "94785435462-1618915104",
+    SUPPORT: "94785435462-1627812354",
+    SUPPORT2: "94785435462-1628835469",
+    SUPPORT3: "94785435462-1628835633"
 };
